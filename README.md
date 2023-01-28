@@ -27,3 +27,7 @@ npm run watch
 **For Production:**
 
 - You need to use only the swagger-dark.min.css file.
+
+
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/t96ws8qn2bD)
