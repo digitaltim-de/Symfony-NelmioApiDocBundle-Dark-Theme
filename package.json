@@ -1,0 +1,20 @@
+{
+  "name": "symfony-nelmio-api-bundle-dark-theme",
+  "version": "1.0.0",
+  "description": "Symfony Nelmio Api Bundle Dark Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./swagger-dark.tailwind.css -o ./swagger-dark.css && npm run minify",
+    "watch": "npx tailwindcss -i ./swagger-dark.tailwind.css -o ./swagger-dark.min.css -w",
+    "minify": "npx css-minify ./swagger-dark.css -o ./swagger-dark.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "css-minify": "^2.0.0"
+  }
+}

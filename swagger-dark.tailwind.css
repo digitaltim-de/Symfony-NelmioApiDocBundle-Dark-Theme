@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swagger .btn  {
+    @apply inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm
+    text-white bg-indigo-400 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+    cursor-pointer font-semibold uppercase;
+}
+
+.swagger {
+    @apply !font-sans mt-10 !text-white;
+}
+
+.swagger .swagger-container {
+    @apply rounded-lg shadow-lg bg-white/10 p-6 mt-10;
+}
+
+.swagger .title {
+    @apply !font-sans font-bold text-2xl !text-white;
+}
+
+.swagger .description p {
+    @apply bg-gray-900 rounded-lg p-4 text-white mt-6 text-lg;
+}
+
+.swagger .info .main span {
+    @apply inline-flex flex-row items-center justify-center rounded-lg p-4 text-white ml-4 gap-4;
+}
+
+.swagger .opblock-summary-path {
+    @apply !font-sans font-bold text-2xl !text-white;
+}
+
+.swagger .scheme-container {
+    @apply !font-sans text-xl !text-white bg-gray-900/50 rounded-lg p-0 mx-5 p-4;
+}
+
+.swagger .schemes {
+    @apply p-0;
+}
+
+.swagger .swagger-ui {
+    @apply w-full;
+}
+
+.swagger .servers-title {
+    @apply !font-sans font-bold text-2xl !text-white pb-4 hidden;
+}
+
+.swagger .servers {
+    @apply w-full rounded-lg p-0 before:content-['Api-Endpoint'] before:block mb-4 font-sans before:h-10;
+}
+
+.swagger .swagger-ui .servers>label select {
+    @apply w-full rounded-lg p-4 bg-white text-gray-900 cursor-pointer;
+}
+
+.swagger .swagger-ui .opblock .opblock-section-header {
+    @apply !font-sans font-bold text-2xl !text-white bg-gray-900;
+}
+
+.swagger .opblock-title {
+    @apply !font-sans font-bold text-2xl !text-white bg-gray-900;
+}
+
+.swagger .swagger-ui .opblock.opblock {
+    @apply hover:bg-gray-900/50;
+}
+
+.swagger .swagger-ui .opblock-description-wrapper p, .swagger-ui .opblock-external-docs-wrapper p, .swagger-ui .opblock-title_normal p {
+    @apply !text-white;
+}
+
+.swagger .swagger-ui .response-col_status {
+    @apply !text-white/80;
+}
+
+.swagger .swagger-ui table thead tr td, .swagger-ui table thead tr th {
+    @apply !text-white/80;
+}
+
+.swagger .swagger-ui .opblock .opblock-section-header h4 {
+    @apply !text-white/80;
+}
+
+.swagger .swagger-ui .btn.authorize {
+    @apply hover:bg-gray-800;
+}
+
+
+.swagger .swagger-ui .dialog-ux .modal-ux {
+    @apply bg-gray-800 rounded-lg p-4 text-white;
+}
+
+.swagger .swagger-ui .dialog-ux .modal-ux-header h3 {
+    @apply !font-sans font-bold text-2xl !text-white;
+}
+
+.swagger-ui button, .swagger-ui input {
+    @apply rounded-lg p-4 text-white bg-gray-800 hover:bg-gray-900;
+}
