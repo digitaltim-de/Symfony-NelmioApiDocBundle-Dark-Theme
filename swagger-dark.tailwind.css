@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: 'Inter', sans-serif !important;
+}
+
 .swagger .btn  {
     @apply inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm
-    text-white bg-indigo-400 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
-    cursor-pointer font-semibold uppercase;
+    text-white bg-indigo-400 hover:bg-indigo-500 cursor-pointer font-semibold uppercase outline-0;
 }
 
 .swagger {
@@ -29,7 +32,7 @@
 }
 
 .swagger .opblock-summary-path {
-    @apply !font-sans font-bold text-2xl !text-white;
+    @apply !font-sans font-bold text-lg !text-white/80;
 }
 
 .swagger .scheme-container {
@@ -49,7 +52,7 @@
 }
 
 .swagger .servers {
-    @apply w-full rounded-lg p-0 before:content-['Api-Endpoint'] before:block mb-4 font-sans before:h-10;
+    @apply w-full rounded-lg p-0 before:content-['Api-Endpoint'] before:block mb-4 font-sans before:h-10 text-base;
 }
 
 .swagger .swagger-ui .servers>label select {
@@ -65,7 +68,7 @@
 }
 
 .swagger .swagger-ui .opblock.opblock {
-    @apply hover:bg-gray-900/50;
+    @apply bg-gray-900 rounded-lg;
 }
 
 .swagger .swagger-ui .opblock-description-wrapper p, .swagger-ui .opblock-external-docs-wrapper p, .swagger-ui .opblock-title_normal p {
@@ -99,4 +102,107 @@
 
 .swagger-ui button, .swagger-ui input {
     @apply rounded-lg p-4 text-white bg-gray-800 hover:bg-gray-900;
+}
+
+.swagger-ui .opblock-description table {
+    @apply list-none list-inside columns-2 max-w-2xl flex p-0;
+}
+
+.swagger-ui .opblock-description table tr {
+    @apply  !font-sans !text-base !font-normal !leading-6 bg-gray-900 text-white border-2 border-gray-800 w-1/2;
+}
+
+.swagger-ui .opblock-description table tr td {
+    @apply px-4;
+}
+
+.swagger-ui .opblock-description table tr td:first-child {
+    @apply px-4 bg-gray-600;
+}
+
+.swagger-ui .btn.execute {
+    @apply w-auto;
+}
+
+.swagger-ui .btn.cancel {
+    @apply hover:bg-transparent;
+}
+
+.swagger-ui .renderedMarkdown p {
+    @apply text-base text-white font-sans;
+}
+
+.swagger-ui .renderedMarkdown h2 {
+    @apply text-base text-gray-300 font-sans mb-2 mt-1;
+}
+
+.swagger-ui .opblock-summary-description {
+    @apply !text-white !font-sans !text-base !font-normal !leading-6 border-l-2 border-gray-800 p-4 ml-2;
+}
+
+.swagger-ui .opblock-summary-control {
+    @apply p-2;
+}
+
+.swagger-ui .opblock-tag {
+    @apply w-auto text-white text-lg font-sans bg-gray-900/20 px-6 rounded hover:bg-gray-900/100 mt-6;
+}
+
+.swagger-ui .opblock-summary {
+    @apply  min-h-[82px];
+}
+
+.swagger-ui .opblock-summary-control {
+    @apply hover:bg-gray-800;
+}
+
+.swagger-ui svg {
+    @apply fill-white;
+}
+
+.swagger-ui .model-box-control:focus, .swagger-ui .models-control:focus, .swagger-ui .opblock-summary-control:focus {
+    outline: none;
+}
+
+.swagger-ui .opblock-summary-description {
+    @apply select-none;
+}
+
+.swagger-ui .expand-operation {
+    @apply p-0 mr-[30px];
+}
+.swagger-ui .dialog-ux .modal-ux-content h4 {
+    @apply text-white;
+}
+
+.swagger-ui .dialog-ux .modal-ux-content p {
+    @apply text-white;
+}
+
+.swagger-ui label {
+    @apply text-white;
+}
+
+.swagger-ui .auth-container input {
+    @apply !text-white !bg-gray-900 text-base;
+}
+
+.swagger-ui .parameters-col_description input[type=text] {
+    @apply !text-white !bg-gray-900 text-base;
+}
+
+.swagger-ui .opblock-body {
+    @apply bg-gray-900/60;
+}
+
+.swagger-ui .opblock-summary-method {
+    @apply !rounded-full;
+}
+
+.swagger-ui address {
+    @apply flex flex-row text-base text-white/20 gap-2 mb-4;
+}
+
+.swagger-ui .btn-group {
+    @apply inline-flex;
 }
