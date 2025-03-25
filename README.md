@@ -1,33 +1,58 @@
 ## Dark Theme for NelmioApiDocBundle
 
-#### [https://github.com/nelmio/NelmioApiDocBundle](https://github.com/nelmio/NelmioApiDocBundle)
+# 🌙 Dark Theme for NelmioApiDocBundle
 
-## Description
-This is a dark theme for the Symfony NelmioApiDocBundle documentation - without any JavaScript. Only changes with the CSS File.
+#### 🔗 [GitHub – NelmioApiDocBundle](https://github.com/nelmio/NelmioApiDocBundle)
 
-![img.png](img.png)
+A sleek and modern dark theme for the Symfony NelmioApiDocBundle documentation — built entirely with CSS and **no JavaScript** required.
 
-**For Installation:**
-```plaintext
-Copy the template folder into your Symfony Project. 
-Thats all what you need for the installation.
+![Preview](img.png)
 
+---
+
+## 🚀 Installation
+
+Simply copy the `templates/` folder into your Symfony project:
+
+```bash
 ./templates/
 ```
 
-**For Development:**
-```plaintext
-If you want to customize it, 
-just run the build or watch scripts that I configured for you.
+That’s it — the theme is now active.
 
-npm run build 
-npm run watch
+---
+
+## ⚙️ Development
+
+If you want to customize the theme, the following scripts are available:
+
+```bash
+npm run build     # Build once
+npm run watch     # Watch for changes during development
 ```
 
-**For Production:**
+---
 
-- You need to use only the swagger-dark.min.css file.
+## 📦 Production
 
+For production use, include only the minimized CSS file:
 
+```bash
+public/swagger-dark.min.css
+```
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/t96ws8qn2bD)
+You can link it in your custom NelmioApiDocBundle templates.
+
+---
+
+## 🤝 Contributing
+
+I hope the community will continue to improve and develop this theme further — especially to refine any visual inconsistencies or design weaknesses.
+
+---
+
+## ☕ Support
+
+If you like the project, feel free to support me:
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/t96ws8qn2bD)
